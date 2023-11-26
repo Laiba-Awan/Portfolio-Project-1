@@ -25,6 +25,9 @@
     <!-- FONT AWESOME CDN LINKED -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+    <!-- ANIMATATION CDN LINKED -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--  FAVICON  -->
     <link rel="icon" type="image/png" sizes="32x32" href="Images.homepage/favicon-32x32.png">
     <title>Elixir | Beautiful Site Template for Agencies & Professionals</title>
@@ -34,7 +37,7 @@
     <header>
         <section class="header-sec-1">
             <div class="topBar d-none d-sm-block">
-                <div class="container fw-bold text-white cont1">
+                <div class="container fw-bold text-white">
                     <div class="row align-items-center row-div">
                         <div class="col-auto d-none d-lg-block location-div">
                             <i class="fa-solid fa-location-dot location-dot me-1" style="color: #fdd428;"></i>
@@ -59,7 +62,7 @@
 
         <section class="header-sec-2">
             <div class="nav-bar">
-                <div class="container cont2">
+                <div class="container">
                     <nav class="navbar navbar-expand-lg">
                         <a href="index.html" class="nav-logo navbar-brand">
                             <img src="Images.homepage/logo1.png" alt="Logo">
@@ -72,7 +75,7 @@
                             <span class="toggler-icon bottom-bar"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="nav-content">
-                            <ul class="navbar-nav me-auto py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-n1 nav-list">
+                            <ul class="navbar-nav me-auto py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-n1-navbar">
                                 <li class="nav-item">
                                     <a class="nav-link nav-pages" aria-current="page" href="index.html">Home</a>
                                 </li>
@@ -83,7 +86,7 @@
                                     <a class="nav-link nav-pages" href="newsroom.html">Newsroom</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-pages" href="buttons.html">Buttons</a>
+                                    <a class="nav-link nav-pages" href="alumni.html">Alumni</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link nav-pages" href="contact.html">Contact</a>
@@ -101,25 +104,28 @@
 
     <main>
         <section class="section1 py-0">
-            <div id="carouselExample" class="carousel slide carousel-fade">
+            <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="2000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="carousal-img" style="background-image:url(Images.homepage/carousalimg1.jpg);">
+                        <div class="carousal-img1">
                             <div class="container">
                                 <div class="row min-vh-100 align-items-center carousal-row">
                                     <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
                                         <div class="overflow-hidden">
-                                            <h1 class="carousal-heading">Helping Leaders</h1>
+                                            <h1 class="carousal-heading">
+                                                Helping Leaders</h1>
                                         </div>
                                         <div class="overflow-hidden">
-                                            <p class="pt-4 mb-5 carousal-p">We look forward to
+                                            <p class="pt-4 mb-5 carousal-p">
+                                                We look forward to
                                                 help
                                                 you
                                                 in taking your
                                                 company to new height.</p>
                                         </div>
                                         <div class="overflow-hidden">
-                                            <div><a class="btn btn-carousal me-3 mt-3 text-white" href="#!">Read
+                                            <div><a class="btn btn-primary me-3 mt-3 text-white" href="#!">Read
                                                     more<span class="fas fa-chevron-right ms-2">
                                                     </span>
                                                 </a>
@@ -135,24 +141,25 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="carousal-img" style="background-image:url(Images.homepage/carousalimg-2.jpg);">
-                            <!--/.bg-holder-->
+                        <div class="carousal-img2">
                             <div class="container">
                                 <div class="row min-vh-100 py-5 align-items-center carousal-row">
                                     <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
                                         <div class="overflow-hidden">
-                                            <h1 class="carousal-heading">Expert
+                                            <h1 class="carousal-heading">
+                                                Expert
                                                 Consultants
                                             </h1>
                                         </div>
                                         <div class="overflow-hidden">
-                                            <p class="pt-4 mb-5 carousal-p">Over 10 years of
+                                            <p class="pt-4 mb-5 carousal-p">
+                                                Over 10 years of
                                                 experience in helping
                                                 clients finding comprehensive solutions.</p>
                                         </div>
                                         <div class="overflow-hidden">
                                             <div>
-                                                <a class="btn btn-carousal text-white me-3 mt-3" href="#!">Read more
+                                                <a class="btn btn-primary text-white me-3 mt-3" href="#!">Read more
                                                     <span class="fas fa-chevron-right ms-2"></span>
                                                 </a>
                                                 <a class="btn btn-warning mt-3" href="contact.html">Contact us
@@ -166,24 +173,26 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="carousal-img" style="background-image:url(Images.homepage/carousalimg3.jpg);">
-                            <!--/.bg-holder-->
+                        <div class="carousal-img3">
+
                             <div class="container">
                                 <div class="row min-vh-100 py-8 align-items-center carousal-row">
                                     <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
                                         <div class="overflow-hidden">
-                                            <h1 class="carousal-heading">Growth
+                                            <h1 class="carousal-heading">
+                                                Growth
                                                 Partners
                                             </h1>
                                         </div>
                                         <div class="overflow-hidden">
-                                            <p class="pt-4 mb-5 carousal-p">Connect with top
+                                            <p class="pt-4 mb-5 carousal-p">
+                                                Connect with top
                                                 consultants
                                                 hand-picked
                                                 by Elixir consulting and finance.</p>
                                         </div>
                                         <div class="overflow-hidden">
-                                            <div><a class="btn btn-carousal text-white me-3 mt-3" href="#!">Read more
+                                            <div><a class="btn btn-primary text-white me-3 mt-3" href="#!">Read more
                                                     <span class="fas fa-chevron-right ms-2"></span>
                                                 </a>
                                                 <a class="btn btn-warning mt-3" href="contact.html">Contact us
@@ -231,8 +240,10 @@
                         <div class="ring-icon mx-auto">
                             <i class="fa-solid fa-chart-column chart-icon" style="color: #293854;"></i>
                         </div>
-                        <h5 class="sec2-pt2-h">Business Consulting</h5>
-                        <p class="px-3 mt-3 mb-0 sec2-pt2-p">Solution for every business related problems, readily
+                        <h5 class="sec2-pt2-h">Business Consulting
+                        </h5>
+                        <p class="px-3 mt-3 mb-0 sec2-pt2-p">Solution
+                            for every business related problems, readily
                             <br> and
                             skillfully.
                         </p>
@@ -242,7 +253,8 @@
                             <i class="fa-regular fa-bell chart-icon" style="color: #293854;"></i>
                         </div>
                         <h5 class="sec2-pt2-h">Risk Management</h5>
-                        <p class="px-3 mt-3 mb-0 sec2-pt2-p">Calculate every possible risk in your business, take <br />
+                        <p class="px-3 mt-3 mb-0 sec2-pt2-p">Calculate
+                            every possible risk in your business, take <br />
                             control
                             over them.</p>
                     </div>
@@ -251,7 +263,8 @@
                             <i class="fa-regular fa-lightbulb chart-icon" style="color: #293854;"></i>
                         </div>
                         <h5 class="sec2-pt2-h">Market Research</h5>
-                        <p class="px-3 mt-3 mb-0 sec2-pt2-p">Know the market before taking any step, reduce <br /> risks
+                        <p class="px-3 mt-3 mb-0 sec2-pt2-p">Know the
+                            market before taking any step, reduce <br /> risks
                             before you
                             go.</p>
                     </div>
@@ -260,7 +273,8 @@
                             <i class="fa-solid fa-headset chart-icon" style="color: #293854;"></i>
                         </div>
                         <h5 class="sec2-pt2-h">Quality Services</h5>
-                        <p class="px-3 mt-3 mb-0 sec2-pt2-p">Experience unparalleled service, from beginning <br /> to
+                        <p class="px-3 mt-3 mb-0 sec2-pt2-p">
+                            Experience unparalleled service, from beginning <br /> to
                             final
                             construction.</p>
                     </div>
@@ -272,11 +286,10 @@
                 <div class="row flex-center sec3p1-row text-center">
                     <div class="col-12 px-3">
                         <div class="position-relative py-5 sec3-cont">
-                            <div class="bg-video-img rounded-3"
-                                style="background-image: url(Images.homepage/video-bg.jpg);"></div>
+                            <div class="bg-video-img rounded-3"></div>
                             <a href="https://youtu.be/jlWMTNZNOc0?feature=shared" target="_blank">
                                 <button class="play-btn">
-                                    <i class="fa-solid fa-play fa-2xl" style="color: #293854;"></i>
+                                    <i class="fa-solid fa-play play-icon" style="color: #293854;"></i>
                                 </button>
                             </a>
                         </div>
@@ -284,23 +297,26 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mt-3 mt-lg-0 p-x-4 px-sm-3">
-                        <h5 class="mb-2 heading-font"><i class="fa-solid fa-users fa-w-20 me-3"
-                                style="color: #293854;"></i>Awesome
-                            Team</h5>
+                        <h5 class="mb-2 heading-font">
+                            <i class="fa-solid fa-users me-3" style="color: #293854;"></i>
+                            AwesomeTeam
+                        </h5>
                         <p class="mt-3 pe-3 pe-lg-5 p-font">Before talking destination, we shine a spotlight across your
                             organization <br>
-                            to fully understand it.</p>
+                            to fully understand it.
+                        </p>
                     </div>
                     <div class="col-lg-4 col-sm-6 mt-3 mt-lg-0 p-x-4 px-sm-3">
-                        <h5 class="mb-2 heading-font"><i class="fa-solid fa-comments fa-w-18 me-3"
-                                style="color: #293854;"></i>Excellent Support</h5>
+                        <h5 class="mb-2 heading-font">
+                            <i class="fa-solid fa-comments me-3" style="color: #293854;"></i>Excellent Support
+                        </h5>
                         <p class="mt-3 pe-3 pe-lg-5 p-font">If you face any trouble, you can always let our dedicated
                             support
                             team help you. They are
                             ready for you 24/7.</p>
                     </div>
                     <div class="col-lg-4 col-sm-6 mt-3 mt-lg-0 p-x-4 px-sm-3">
-                        <h5 class="mb-2 heading-font"><i class="fa-solid fa-bolt-lightning fa-w-10 me-3"
+                        <h5 class="mb-2 heading-font"><i class="fa-solid fa-bolt-lightning me-3"
                                 style="color: #293854;"></i>Faster Performance</h5>
                         <p class="mt-3 pe-3 pe-lg-5 p-font">We develop a systematic well-ordered process of analysis,
                             from
@@ -318,11 +334,9 @@
                     <hr class="short mx-auto">
                 </div>
                 <div class="row g-0 position-relative mb-4 mb-lg-0">
-                    <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative" style="min-height: 400px;">
-                        <div class="img-sec4 rounded-te-lg" style="background-image: url(Images.homepage/s4img1.jpg);">
-                        </div>
+                    <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative sec4-div">
+                        <div class="img1-sec4 rounded-te-lg"></div>
                     </div>
-                    <!-- Background -->
                     <div class="col-lg-6 my-lg-0 bg-white p-lg rounded-lg-te-col-2">
                         <div class="elixir-caret d-none d-lg-block"></div>
                         <div class="d-flex align-items-center h-100">
@@ -350,12 +364,9 @@
                 </div>
 
                 <div class="row g-0 position-relative mb-4 mb-lg-0">
-                    <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative order-lg-2" style="min-height: 400px;">
-                        <div class="img-sec4 rounded-ts-lg-col-3"
-                            style="background-image: url(Images.homepage/s4img2.jpg);">
-                        </div>
+                    <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative order-lg-2 sec4-div">
+                        <div class="img2-sec4 rounded-ts-lg-col-3"></div>
                     </div>
-                    <!-- Background -->
                     <div class="col-lg-6 my-lg-0 bg-white p-lg rounded-be-lg-col-4">
                         <div class="elixir-caret d-none d-lg-block"></div>
                         <div class="d-flex align-items-center h-100">
@@ -386,11 +397,9 @@
                     </div>
                 </div>
                 <div class="row  g-0 position-relative mb-4 mb-lg-0">
-                    <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative" style="min-height: 400px;">
-                        <div class="img-sec4 rounded-bs-lg" style="background-image: url(Images.homepage/s4img3.jpg);">
-                        </div>
+                    <div class="col-lg-6 py-3 py-lg-0 mb-0 position-relative sec4-div">
+                        <div class="img3-sec4 rounded-bs-lg"></div>
                     </div>
-                    <!-- Background -->
                     <div class="col-lg-6 my-lg-0 bg-white p-lg rounded-be-lg-col-6">
                         <div class="elixir-caret d-none d-lg-block"></div>
                         <div class="d-flex align-items-center h-100">
@@ -711,67 +720,116 @@
         </section>
 
         <section class="section10">
-            <div class="bg-img-s10 overlay overlay-elixir"
-                style="background-image: url(Images.homepage/sec10-bg-img.jpg);">
-            </div>
-            <div class="container">
-                <div class="d-flex">
-                    <span class="me-3 div">
-                        <img src="Images.homepage/checkmark.png" alt="checkmark" style="width: 55px">
-                    </span>
+            <div class="bg-img-s10 overlay-elixir">
+                <div class="container cont-homepg">
+                    <div class="d-flex">
+                        <span class="me-3">
+                            <img src="Images.homepage/checkmark.png" alt="checkmark" style="width: 55px">
+                        </span>
 
-                    <div class="flex-1 div">
-                        <h2 class="text-warning s10-heading">Take the right step, <br>
-                            <span class="text-white">do the big things.</span>
-                        </h2>
-                        <div class="row pe-lg-10-s10">
-                            <div class="overflow-hidden col-md-3 px-3">
-                                <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10">52</div>
-                                <h6 class="p-font-s10 text-white">Cases Solved</h6>
+                        <div class="flex-1">
+                            <h2 class="s10-heading">Take the right step, <br>
+                                <span class="text-white">do the big things.</span>
+                            </h2>
+                            <div class="row pe-lg-10-s10">
+                                <div class="overflow-hidden col-md-3 px-3">
+                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10">
+                                        52</div>
+                                    <h6 class="p-font-s10 text-white">Cases Solved</h6>
+                                </div>
+                                <div class="overflow-hidden col-lg-3 px-3">
+                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10">164</div>
+                                    <h6 class="p-font-s10 text-white">Trained Experts</h6>
+                                </div>
+                                <div class="d-flex d-lg-none"></div>
+                                <div class="overflow-hidden col-md-3 px-3">
+                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10">38</div>
+                                    <h6 class="p-font-s10 text-white">Branches</h6>
+                                </div>
+                                <div class="overflow-hidden col-lg-3 px-3">
+                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10">100</div>
+                                    <h6 class="p-font-s10 text-white">Satisfied Clients</h6>
+                                </div>
                             </div>
-                            <div class="overflow-hidden col-lg-3 px-3">
-                                <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10">164</div>
-                                <h6 class="p-font-s10 text-white">Trained Experts</h6>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <section class="section11 bg-white">
+            <div class="container">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="single-item">
+                                <div class="row sec-11-row">
+                                    <div class="col-4 col-md-3 mx-auto">
+                                        <img src="Images.homepage/client-3.png"
+                                            class="rounded-3-img-s11 mx-auto img-fluid" alt="Member">
+                                    </div>
+                                    <div class="col-md-9 mt-md-0 px-sm-3 col-2-s-11">
+                                        <p class="p-font-s11">Their work on our website and Internet marketing has made
+                                            a significant
+                                            different to our business. We’ve seen a 425% increase in quote requests from
+                                            the website which has been pretty remarkable – but I’d always like to see
+                                            more!</p>
+                                        <h6 class="mb-1 heading-font-s11">Michael Clarke</h6>
+                                        <p class="mb-0 sub-heading-s11">CEO, A.E.T Institute</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="w-100 d-flex d-lg-none"></div>
-                            <div class="overflow-hidden col-md-3 px-3">
-                                <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10">38</div>
-                                <h6 class="p-font-s10 text-white">Branches</h6>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="single-item">
+                                <div class="row sec-11-row">
+                                    <div class="col-4 col-md-3 mx-auto">
+                                        <img src="Images.homepage/client-1.png"
+                                            class="rounded-3-img-s11 mx-auto img-fluid" alt="Member">
+                                    </div>
+                                    <div class="col-md-9 mt-md-0 px-sm-3 col-2-s-11">
+                                        <p class="p-font-s11">Writing case studies was a daunting task for us. We
+                                            didn’t know where to begin or what questions to ask, and clients never
+                                            seemed to follow through when we asked. Elixir team did everything – with
+                                            almost no time or effort for me!</p>
+                                        <h6 class="mb-1 heading-font-s11">Maria Sharapova</h6>
+                                        <p class="mb-0 sub-heading-s11">Managing Director, Themewagon Inc.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="overflow-hidden col-lg-3 px-3">
-                                <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10">100</div>
-                                <h6 class="p-font-s10 text-white">Satisfied Clients</h6>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="single-item">
+                                <div class="row sec-11-row">
+                                    <div class="col-4 col-md-3 mx-auto">
+                                        <img src="Images.homepage/client-2.png"
+                                            class="rounded-3-img-s11 mx-auto img-fluid" alt="Member">
+                                    </div>
+                                    <div class="col-md-9 mt-md-0 px-sm-3 col-2-s-11">
+                                        <p class="p-font-s11">As a sales gamification company, we were skeptical to work
+                                            with a consultant to optimize our sales emails, but Elixir was highly
+                                            recommended by many other Y-Combinator startups we knew. Elixir helped us
+                                            run a ~6 week email campaign.!</p>
+                                        <h6 class="mb-1 heading-font-s11">David Beckham</h6>
+                                        <p class="mb-0 sub-heading-s11">Chairman, Harmony Corporation</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-
         </section>
-
-        <!-- <section class="section11 bg-white">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="Images.homepage/client-1.png" class="d-block w-100" alt="Member">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Images.homepage/client-2.png" class="d-block w-100" alt="Member">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="Images.homepage/client-3.png" class="d-block w-100" alt="Member">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </section> -->
 
         <section class="section12">
             <div class="container">
@@ -780,7 +838,7 @@
                         <img class="img-fluid" src="Images.homepage/sec12logo1-.png" alt="partnerco">
                     </div>
                     <div class="col-4 col-md-2 my-3 px-3 overflow-hidden">
-                        <img class="img-fluid" src="Images.homepage/sec12-logo2.png" alt="tvc" data-zanim-xs="{}" />
+                        <img class="img-fluid" src="Images.homepage/sec12-logo2.png" alt="tvc">
                     </div>
                     <div class="col-4 col-md-2 my-3 px-3 overflow-hidden">
                         <img class="img-fluid" src="Images.homepage/sec12-logo3.png" alt="arcade">
@@ -898,10 +956,7 @@
                                     </div>
                                     <div class="col-md-5 mt-3 mt-md-0 px-3">
                                         <div class="d-grid">
-                                            <button class="btn btn-warning-s14">
-                                                <span class="fw-semi-bold"
-                                                    style="font-family: Montserrat, sans-serif;">Submit</span>
-                                            </button>
+                                            <button class="btn btn-warning-s14 btn-warning">Submit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -914,29 +969,34 @@
                             <div class="col-6 col-lg-4 text-white ms-lg-auto px-3">
                                 <ul class="list-unstyled">
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="contact.html">Contact Us</a>
+                                        <a class="text-white text-decoration-none anchors-s14"
+                                            href="contact.html">Contact Us</a>
                                     </li>
                                     <li class="mb-3">
                                         <a class="text-white text-decoration-none anchors-s14" href="#!">FAQ</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Privacy Policy</a>
+                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Privacy
+                                            Policy</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Terms of Use</a>
+                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Terms of
+                                            Use</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Global Office</a>
+                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Global
+                                            Office</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Local Office</a>
+                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Local
+                                            Office</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-6 col-sm-5 ms-sm-auto px-3">
                                 <ul class="list-unstyled">
                                     <li class="mb-3">
-                                        <a class="text-decoration-none d-flex align-items-center" href="#!"> 
+                                        <a class="text-decoration-none d-flex align-items-center" href="#!">
                                             <span class="sec14-icons me-3">
                                                 <i class="fab fa-linkedin-in"></i>
                                             </span>
@@ -972,9 +1032,11 @@
                         </div>
                     </div>
                 </div>
+                <button class="top-btn">
+                    <i class="fa-solid fa-arrow-up-long" style="color: #2a3855;"></i>
+                </button>
             </div>
         </section>
-
     </main>
 
     <footer class="bg-footer py-4-footer text-center">
@@ -997,7 +1059,19 @@
 
     </footer>
 
+
+
+
+
+    <!-- Animation cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Custom css -->
     <script src="script.js"></script>
+
+    <!-- Bootstrap css -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

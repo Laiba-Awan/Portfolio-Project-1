@@ -2,7 +2,26 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
+/* To Top Button */
+.top-btn {
+  display: none;
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 1.25rem;
+  right: 1.875rem;
+  z-index: 99;
+  border: none;
+  background-color: #fdd428;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100%;
+  font-size: 1.5rem;
+}
+/* <---------------------> */
+
 /* TOPBAR CSS */
 .topBar {
   background-color: #2a3855;
@@ -42,7 +61,7 @@
 .clock {
   font-size: 13.8px;
 }
-/* End of TopBar CSS*/
+/* <---------------------> */
 
 /* NAVBAR CSS */
 .nav-bar {
@@ -54,8 +73,14 @@
   margin-bottom: -3.76rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   position: sticky;
-  top: 0;
   z-index: 1015;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 /* Hamburger icon  */
 .navbar-toggler {
@@ -138,10 +163,31 @@
 .nav-pages:hover {
   color: #7888a8;
 }
-/* navbar css ends here  */
+/* <---------------------> */
 
 /* CSS FOR CAROUSAL */
-.carousal-img {
+.carousal-img1 {
+  background-image: url(Images.homepage/carousalimg1.jpg);
+  width: 100% !important;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.carousal-img2 {
+  background-image: url(Images.homepage/carousalimg-2.jpg);
+  width: 100% !important;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.carousal-img3 {
+  background-image: url(Images.homepage/carousalimg3.jpg);
   width: 100% !important;
   min-height: 100%;
   background-size: cover;
@@ -168,12 +214,13 @@
   line-height: 1.15;
   padding-top: 1.8rem !important;
 }
-.btn-carousal {
+.btn-primary {
   background-color: #2a3855;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  border: transparent;
 }
-.btn-carousal:hover {
+.btn-primary:hover {
   background-color: #25324c;
 }
 .btn-warning {
@@ -198,7 +245,6 @@
   color: #000;
   display: inline-block;
   font-size: 1.776889rem;
-  /* width: 44px; */
 }
 .swipe-btn-prev {
   color: #000;
@@ -206,6 +252,8 @@
   font-size: 1.776889rem;
   width: 44px;
 }
+/* <---------------------> */
+
 /* CSS FOR SECTION2 */
 .section2 {
   padding: 4rem 0;
@@ -264,7 +312,7 @@
   margin-top: 28.8px;
   letter-spacing: -0.05rem;
 }
-/* SECTION 2 CSS ENDS HERE */
+/* <---------------------> */
 
 /* SECTION 3 CSS */
 .section3 {
@@ -274,6 +322,7 @@
   padding: 0rem 1.8rem;
 }
 .bg-video-img {
+  background-image: url(Images.homepage/video-bg.jpg);
   width: 100%;
   min-height: 100%;
   position: absolute;
@@ -289,33 +338,35 @@
 }
 .sec3p1-row {
   padding: 0px 0px 64px;
-  margin: 0px -16px;
+}
+.play-icon {
+  font-size: 1.55rem;
 }
 .play-btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
   height: 5rem;
   width: 5rem;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 50%;
-  border: none;
   position: relative;
   font-size: 0.675rem;
   color: #2a3855;
   margin-bottom: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
 }
-
-/* font-size: 1.333rem;
+.play-btn:before {
+  content: "";
   height: 6.25rem;
   width: 6.25rem;
-  position: relative;
-  top: -62%;
-  border: transparent;
+  position: absolute;
+  left: -0.625rem;
+  top: -0.625rem;
+  border: 0.625rem solid rgba(255, 255, 255, 0.5);
   border-radius: 100%;
-  border: 0.625rem solid rgb(255, 255, 255); */
+}
 
 .p-font {
   font-family: "Open Sans", sans-serif;
@@ -327,6 +378,9 @@
   color: #2a3855;
   font-weight: 700;
 }
+/* <---------------------> */
+
+/* Section4 css starts here */
 .section4 {
   padding: 4rem 0rem;
   background: #fafafa;
@@ -338,13 +392,37 @@
 .s4-row {
   margin-top: 80px;
 }
+.sec4-div {
+  min-height: 400px;
+}
 .mb-6 {
   margin-bottom: 4rem;
 }
 .p-lg {
   padding: 1.8rem;
 }
-.img-sec4 {
+.img1-sec4 {
+  background-image: url(Images.homepage/s4img1.jpg);
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  overflow: hidden;
+}
+.img2-sec4 {
+  background-image: url(Images.homepage/s4img2.jpg);
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  overflow: hidden;
+}
+.img3-sec4 {
+  background-image: url(Images.homepage/s4img3.jpg);
   width: 100%;
   min-height: 100%;
   background-size: cover;
@@ -408,9 +486,9 @@
 .mb-4-sec4 {
   margin-bottom: 1.8rem;
 }
-body {
-  /* background-color: rgb(142, 74, 74); */
-}
+/* <---------------------> */
+
+/* Section5 css starts here */
 .section5 {
   padding: 4rem 0rem;
 }
@@ -440,6 +518,9 @@ body {
 .px-4-s5 {
   padding: 0rem 1.8rem;
 }
+/* <---------------------> */
+
+/* Section6 css starts here */
 .section6 {
   background-color: #2a3855;
   padding: 4rem 0rem;
@@ -452,8 +533,6 @@ body {
   line-height: 1.2;
 }
 .sec6-btn {
-  /* width: 152.24px;
-  height: 45.2px; */
   font-family: "Montserrat", sans-serif;
   font-size: 0.7501875469rem;
   padding: 0.8rem 2.5rem;
@@ -467,6 +546,9 @@ body {
 .mt-4-s6 {
   margin-top: 1.8rem;
 }
+/* <---------------------> */
+
+/* Section 7 */
 .section7 {
   padding: 4rem 0rem;
 }
@@ -497,6 +579,9 @@ body {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
 }
+/* <---------------------> */
+
+/* Section 8 */
 .section8 {
   padding: 4rem 0rem;
   background-color: #2a3855;
@@ -548,6 +633,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.01rem;
 }
+/* <---------------------> */
+
+/* Section 9 */
 .section9 {
   padding: 4rem 0rem;
   background-color: #fafafa;
@@ -592,25 +680,23 @@ body {
 .mt4-card {
   margin-top: 1.8rem;
 }
+/* <---------------------> */
+
+/* Section 10 */
 .section10 {
   position: relative;
 }
 .bg-img-s10.overlay-elixir::before {
   background-color: rgba(44, 56, 85, 0.7) !important;
-}
-.bg-img-s10.overlay:before {
-  position: absolute;
   content: "";
-  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
 }
 .bg-img-s10 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-image: url(Images.homepage/sec10-bg-img.jpg);
   width: 100%;
   min-height: 100%;
   background-position: center;
@@ -619,11 +705,18 @@ body {
   z-index: 0;
   overflow: hidden;
 }
-.div {
-  z-index: 1;
+.cont-homepg {
+  position: relative;
+  padding: 50px 10px 50px 10px;
+}
+.flex-1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
 }
 .s10-heading {
   font-size: 2.368593037rem;
+  color: #fdd428;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: -0.15rem;
@@ -640,10 +733,47 @@ body {
   font-family: "Montserrat", "Poppins", sans-serif;
   font-weight: 700;
 }
+/* <---------------------> */
+
+/* Section 11 */
+.section11 {
+  padding: 4rem 0rem;
+}
+.rounded-3-img-s11 {
+  border-radius: 0.625rem;
+}
+.col-2-s-11 {
+  margin-top: 1.8rem;
+  padding: 0rem 1.8rem;
+}
+.p-font-s11 {
+  font-size: 1.29505rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #6a6a6a;
+  line-height: 1.45;
+}
+.heading-font-s11 {
+  font-size: 1rem;
+  margin-top: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #2a3855;
+}
+.sub-heading-s11 {
+  color: #949494;
+  font-family: "Open Sans", sans-serif;
+}
+/* <---------------------> */
+
+/* Section 12 */
 .section12 {
   padding: 64px 0px;
   background-color: #f2f2f2;
 }
+/* <---------------------> */
+
+/* Section 13 */
 .section13 {
   padding: 4rem 0rem;
   background-color: #fafafa;
@@ -662,6 +792,9 @@ body {
   padding: 0px 14.4px;
   margin-top: 28.8px;
 }
+/* <---------------------> */
+
+/* Section 14 */
 .section14 {
   padding: 4rem 0rem;
   background-color: #3d4c6f;
@@ -694,20 +827,20 @@ body {
 .btn-warning-s14 {
   color: #2a3855;
   border-radius: 0.188rem;
-  background-color: #fdd428;
   font-weight: 600;
   border: 1px solid transparent;
   letter-spacing: 0.01rem;
+  font-family: "Montserrat", sans-serif;
 }
-.anchors-s14{
+.anchors-s14 {
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   line-height: 1.45;
 }
-.socials-s14{
+.socials-s14 {
   font-size: 1rem;
   letter-spacing: -0.05rem;
-  font-family: "Montserrat","Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -721,21 +854,38 @@ body {
   width: 2.5rem;
   color: #fff;
 }
+/* <---------------------> */
+
+/* Footer */
 .bg-footer {
   background: #2a3855;
   padding: 28.8px 0px;
 }
+/* <---------------------> */
+
+/* All the other Pages */
+
 .bg-img-servicePge {
   background-image: url(Images.homepage/bg-1.jpg);
   width: 100%;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  min-height: 100%;
+  height: 71vh;
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   z-index: 0;
+}
+.bg-img-servicePge.overlay:before {
+  background: rgba(0, 0, 0, 0.25);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.cont {
+  position: relative;
+  top: 130px;
 }
 .pt-6-sec1-SP {
   padding-top: 4rem;
@@ -746,6 +896,28 @@ body {
   letter-spacing: -0.25rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+.h1-sec1-sp {
+  font-size: 1.333rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+.h2-sec1-sp {
+  font-weight: 400;
+  font-size: 1.333rem;
+  font-family: "Open Sans", sans-serif;
+}
+.breadcrumb {
+  padding: 0.75rem 1rem;
+}
+.breadcrumb .active::before {
+  float: left;
+  position: relative;
+  top: 0.125rem;
+  padding: 0rem 0.5rem;
+  color: #fff;
+  content: url("data:image/svg+xml,%3Csvg aria-hidden='true' width='19' height='19' focusable='false' data-prefix='fas' data-icon='angle-double-right' class='svg-inline--fa fa-angle-double-right fa-w-14 fs-1' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23fff' d='M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z'%3E%3C/path%3E%3C/svg%3E");
 }
 .mt-4-pagination {
   margin-top: 1.8rem;
@@ -806,13 +978,15 @@ body {
   font-size: 1rem;
   color: #000;
 }
-.form-btn {
+.btn-primary {
   background-color: #2a3855;
   font-weight: 700;
   letter-spacing: 0.01rem;
   color: #fff;
 }
-
+.btn-primary:active {
+  background-color: #2a3855 !important;
+}
 .form-heading {
   font-size: 1.3333rem;
   color: #2a3855;
@@ -829,7 +1003,11 @@ body {
 .mb-4-form {
   margin-bottom: 1.8rem;
 }
+
+
+
 /* MEDIA QUERIES */
+
 @media (max-width: 992px) {
   /* FOR NAVBAR*/
   #nav-content {
@@ -847,7 +1025,11 @@ body {
     margin: 16px 0px;
   }
 }
+
 @media (min-width: 992px) {
+  .ms-lg-n1-navbar {
+    margin-left: -0.25rem;
+  }
   .sec2-pt1-h {
     font-size: 2.368593037rem;
   }
@@ -905,6 +1087,13 @@ body {
   }
   .s14-heading {
     font-size: 1.776889rem;
+  }
+  .sec-11-row {
+    padding: 0rem 7.5rem;
+  }
+  .cont-homepg {
+    position: relative;
+    padding: 130px 0px 130px 20px;
   }
 }
 
@@ -972,5 +1161,18 @@ body {
   }
   .section1-CP {
     padding: 7.5rem 0rem;
+  }
+  .section11 {
+    padding: 7.5rem 0rem;
+  }
+  .p-font-s11 {
+    font-size: 1.333rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg-img-servicePge.overlay:before {
+    background: rgba(0, 0, 0, 0.25);
+    height: 71vh;
   }
 }

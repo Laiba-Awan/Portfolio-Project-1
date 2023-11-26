@@ -22,6 +22,10 @@
     <!--  CUSTOM CSS LINKED  -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- ANIMATATION CDN LINKED -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <!-- FONT AWESOME CDN LINKED -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
@@ -83,7 +87,7 @@
                                     <a class="nav-link nav-pages" href="newsroom.html">Newsroom</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-pages" href="buttons.html">Buttons</a>
+                                    <a class="nav-link nav-pages" href="alumni.html">Alumni</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link nav-pages" href="contact.html">Contact</a>
@@ -100,6 +104,30 @@
     </header>
 
     <main>
+        <section class="section1-ContactPage position-relative">
+            <div class="bg-img-servicePge overlay" style="background-image:url(Images.homepage/bg-1.jpg);">
+                <!--/.bg-holder-->
+                <div class="container cont">
+                    <div class="row pt-6-sec1-SP">
+                        <div class="col-md-8 px-3 text-white">
+                            <div class="overflow-hidden">
+                                <h1 class="text-white sec1-SP-heading mb-0">Contact</h1>
+                                <div class="nav" aria-label="breadcrumb" role="navigation">
+                                    <ol class="breadcrumb ps-0">
+                                        <li class="breadcrumb-item">
+                                            <a class="text-white h1-sec1-sp" href="index.html">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active h2-sec1-sp text-white" aria-current="page">
+                                            Contact</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section1-CP">
             <div class="container">
                 <div class="row s1-row-CP">
@@ -156,14 +184,14 @@
                                 <textarea class="form-control input-card" id="exampleFormControlTextarea1" rows="11"
                                     placeholder="Enter your descriptions here..." required="required"></textarea>
                             </div>
-                            <button type="submit" class="btn form-btn">Send Now</button>
+                            <button type="submit" class="btn btn-primary">Send Now</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
 
-      
+
         <section class="section14">
             <div class="container">
                 <div class="row align-items-center">
@@ -179,7 +207,7 @@
                                     </div>
                                     <div class="col-md-5 mt-3 mt-md-0 px-3">
                                         <div class="d-grid">
-                                            <button class="btn btn-warning-s14">
+                                            <button class="btn btn-warning-s14 btn-warning">
                                                 <span class="fw-semi-bold"
                                                     style="font-family: Montserrat, sans-serif;">Submit</span>
                                             </button>
@@ -195,29 +223,34 @@
                             <div class="col-6 col-lg-4 text-white ms-lg-auto px-3">
                                 <ul class="list-unstyled">
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="contact.html">Contact Us</a>
+                                        <a class="text-white text-decoration-none anchors-s14"
+                                            href="contact.html">Contact Us</a>
                                     </li>
                                     <li class="mb-3">
                                         <a class="text-white text-decoration-none anchors-s14" href="#!">FAQ</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Privacy Policy</a>
+                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Privacy
+                                            Policy</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Terms of Use</a>
+                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Terms of
+                                            Use</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Global Office</a>
+                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Global
+                                            Office</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Local Office</a>
+                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Local
+                                            Office</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-6 col-sm-5 ms-sm-auto px-3">
                                 <ul class="list-unstyled">
                                     <li class="mb-3">
-                                        <a class="text-decoration-none d-flex align-items-center" href="#!"> 
+                                        <a class="text-decoration-none d-flex align-items-center" href="#!">
                                             <span class="sec14-icons me-3">
                                                 <i class="fab fa-linkedin-in"></i>
                                             </span>
@@ -277,7 +310,15 @@
 
     </footer>
 
+    <!-- Animation cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Custom css -->
     <script src="script.js"></script>
+
+    <!-- Bootstrap css -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
