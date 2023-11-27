@@ -105,19 +105,19 @@
 
     <main>
         <section class="section1-ContactPage position-relative">
-            <div class="bg-img-servicePge overlay" style="background-image:url(Images.homepage/bg-1.jpg);">
-                <!--/.bg-holder-->
+            <div class="bg-img-servicePge overlay">
                 <div class="container cont">
                     <div class="row pt-6-sec1-SP">
                         <div class="col-md-8 px-3 text-white">
                             <div class="overflow-hidden">
-                                <h1 class="text-white sec1-SP-heading mb-0">Contact</h1>
+                                <h1 class="text-white sec1-SP-heading mb-0" data-aos="fade-up">Contact</h1>
                                 <div class="nav" aria-label="breadcrumb" role="navigation">
                                     <ol class="breadcrumb ps-0">
-                                        <li class="breadcrumb-item">
+                                        <li class="breadcrumb-item" data-aos="fade-up" data-aos-delay="100">
                                             <a class="text-white h1-sec1-sp" href="index.html">Home</a>
                                         </li>
-                                        <li class="breadcrumb-item active h2-sec1-sp text-white" aria-current="page">
+                                        <li class="breadcrumb-item active h2-sec1-sp text-white" aria-current="page"
+                                            data-aos="fade-up" data-aos-delay="100">
                                             Contact</li>
                                     </ol>
                                 </div>
@@ -223,26 +223,30 @@
                             <div class="col-6 col-lg-4 text-white ms-lg-auto px-3">
                                 <ul class="list-unstyled">
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14"
+                                        <a class="text-white text-decoration-none anchors-s14 underline"
                                             href="contact.html">Contact Us</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">FAQ</a>
+                                        <a class="text-white text-decoration-none anchors-s14 underline"
+                                            href="#!">FAQ</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Privacy
+                                        <a class="text-white text-decoration-none anchors-s14 underline"
+                                            href="#!">Privacy
                                             Policy</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Terms of
+                                        <a class="text-white text-decoration-none anchors-s14 underline" href="#!">Terms
+                                            of
                                             Use</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Global
+                                        <a class="text-white text-decoration-none anchors-s14 underline"
+                                            href="#!">Global
                                             Office</a>
                                     </li>
                                     <li class="mb-3">
-                                        <a class="text-white text-decoration-none anchors-s14" href="#!">Local
+                                        <a class="text-white text-decoration-none anchors-s14 underline" href="#!">Local
                                             Office</a>
                                     </li>
                                 </ul>
@@ -286,8 +290,12 @@
                         </div>
                     </div>
                 </div>
+                <button class="top-btn">
+                    <i class="fa-solid fa-arrow-up-long" style="color: #2a3855;"></i>
+                </button>
             </div>
         </section>
+        
     </main>
 
     <footer class="bg-footer py-4-footer text-center">
@@ -303,7 +311,8 @@
                 </div>
                 <div class="col text-sm-end mt-3 mt-sm-0 px-3">
                     <span class="footer-heading-2">Designed by</span>
-                    <a class="text-white footer-heading-2" href="https://themewagon.com/" target="_blank">Themewagon</a>
+                    <a class="text-white footer-heading-2 underline" href="https://themewagon.com/"
+                        target="_blank">Themewagon</a>
                 </div>
             </div>
         </div>
@@ -313,7 +322,10 @@
     <!-- Animation cdn -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            offset: 50,
+        });
     </script>
     <!-- Custom css -->
     <script src="script.js"></script>

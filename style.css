@@ -2,7 +2,6 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  scroll-behavior: smooth !important;
 }
 /* To Top Button */
 .top-btn {
@@ -19,6 +18,9 @@
   padding: 15px;
   border-radius: 100%;
   font-size: 1.5rem;
+}
+.top-btn:hover {
+  box-shadow: 0 0 10px #fdd428;
 }
 /* <---------------------> */
 
@@ -664,12 +666,18 @@
   border-radius: 0.625rem;
   border: 0;
 }
+.card:hover {
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
 .card-title {
   font-size: 1.333rem;
   letter-spacing: -0.05rem;
   color: #2a3855;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+.card-title-card:hover {
+  text-decoration: underline;
 }
 .cardBtitle {
   font-family: "Montserrat", sans-serif;
@@ -818,6 +826,9 @@
   font-family: "Montserrat", sans-serif;
   font-size: 0.7501875469rem;
 }
+.input-field-contact:focus {
+  box-shadow: none;
+}
 .btn {
   border-radius: 0.188rem;
   font-size: 0.7501875469rem;
@@ -868,7 +879,7 @@
 .bg-img-servicePge {
   background-image: url(Images.homepage/bg-1.jpg);
   width: 100%;
-  height: 71vh;
+  min-height: 100%;
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -885,10 +896,11 @@
 }
 .cont {
   position: relative;
-  top: 130px;
+  padding: 67px 0px 60px 12px;
 }
 .pt-6-sec1-SP {
   padding-top: 4rem;
+  width: 100%;
 }
 .sec1-SP-heading {
   font-size: 3.1573345183rem;
@@ -930,6 +942,15 @@
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
 }
+.page-link:hover {
+  background-color: #2a3855 !important;
+  color: white;
+  border: 1px solid #2a3855 !important;
+}
+.page-link:focus {
+  color: #6a6a6a;
+  box-shadow: none;
+}
 .active-page {
   background-color: #2a3855 !important;
   border: 1px solid #2a3855 !important;
@@ -954,6 +975,9 @@
   color: #fff;
   line-height: 1.45;
   text-decoration: none;
+}
+.underline:hover {
+  text-decoration: underline !important;
 }
 .py-4-footer {
   padding: 1.8rem;
@@ -1000,11 +1024,13 @@
   font-family: "Montserrat", sans-serif;
   color: #6a6a6a;
 }
+.input-card:focus {
+  box-shadow: 0 0 3px grey;
+  border: 1px solid rgb(171, 171, 171);
+}
 .mb-4-form {
   margin-bottom: 1.8rem;
 }
-
-
 
 /* MEDIA QUERIES */
 
@@ -1168,11 +1194,8 @@
   .p-font-s11 {
     font-size: 1.333rem;
   }
-}
-
-@media (max-width: 576px) {
-  .bg-img-servicePge.overlay:before {
-    background: rgba(0, 0, 0, 0.25);
-    height: 71vh;
+  .cont {
+    position: relative;
+    padding: 119px 0px 120px 16px;
   }
 }
