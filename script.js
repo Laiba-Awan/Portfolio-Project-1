@@ -13,7 +13,6 @@ window.addEventListener("scroll", function () {
 
 
 
-
 // Get button
 const topBtn = document.querySelector(".top-btn");
 
