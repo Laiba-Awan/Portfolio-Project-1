@@ -33,20 +33,3 @@ topBtn.addEventListener("click", () => {
   });
 });
 
-// // Counter up code section 10 //
-// let values = document.querySelectorAll(".counter");
-// let interval = 2000;
-
-
-// values.forEach((values) => {
-//   let startValue = 0;
-//   let endValue = parseInt(values.getAttribute("data-bs-target"));
-//   let duration = Math.trunc(interval / endValue);
-//   let counter = setInterval(()=> {
-//     startValue += 1;
-//     values.textContent = startValue;
-//     if (startValue == endValue){
-//       clearInterval(counter);
-//     }
-//   }, duration);
-// });
