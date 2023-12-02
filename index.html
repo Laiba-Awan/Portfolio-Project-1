@@ -28,7 +28,7 @@
     <!-- ANIMATE.CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- ANIMATATION CDN LINKED -->
+    <!-- AOS ANIMATATION CDN LINKED -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--  FAVICON  -->
@@ -71,16 +71,16 @@
                             <img src="Images.homepage/logo1.png" alt="Logo">
                         </a>
                         <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#nav-content"
-                            aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                            type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler-icon top-bar"></span>
                             <span class="toggler-icon middle-bar"></span>
                             <span class="toggler-icon bottom-bar"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="nav-content">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-n1-navbar">
                                 <li class="nav-item">
-                                    <a class="nav-link nav-pages" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link nav-pages active" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link nav-pages" href="services.html">Services</a>
@@ -98,7 +98,6 @@
                             <a href="https://themewagon.com/themes/elixir/"
                                 class="btn btn-outline-dark nav-btn rounded-pill border-2 ms-auto"
                                 target="_blank">Purchase</a>
-                        </div>
                     </nav>
                 </div>
             </div>
@@ -214,18 +213,17 @@
                             </div>
                         </div>
                     </div>
-
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="prev">
-                        <span class="swipe-btn-prev" aria-hidden="true">
-                            <i class="fa-solid fa-chevron-left fa-sm"></i>
+                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true" data-aos="fade-right"> -->
+                        <i class="fa-solid fa-chevron-left carousel-1-icon-1"></i>
                         </span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="next">
-                        <span class="swipe-btn-next" aria-hidden="true">
-                            <i class="fa-solid fa-chevron-right fa-sm"></i>
+                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"> -->
+                        <i class="fa-solid fa-chevron-right carousel-1-icon-2"></i>
                         </span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -787,21 +785,24 @@
                             </h2>
                             <div class="row pe-lg-10-s10">
                                 <div class="overflow-hidden col-md-3 px-3">
-                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10" data-aos="fade-up">
-                                        52</div>
+                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10 counter" data-aos="fade-up">52
+                                    </div>
                                     <h6 class="p-font-s10 text-white" data-aos="fade-up">Cases Solved</h6>
                                 </div>
                                 <div class="overflow-hidden col-lg-3 px-3">
-                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10" data-aos="fade-up">164</div>
+                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10 counter" data-aos="fade-up">164
+                                    </div>
                                     <h6 class="p-font-s10 text-white" data-aos="fade-up">Trained Experts</h6>
                                 </div>
                                 <div class="d-flex d-lg-none"></div>
                                 <div class="overflow-hidden col-md-3 px-3">
-                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10" data-aos="fade-up">38</div>
+                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10 counter" data-aos="fade-up">38
+                                    </div>
                                     <h6 class="p-font-s10 text-white" data-aos="fade-up">Branches</h6>
                                 </div>
                                 <div class="overflow-hidden col-lg-3 px-3">
-                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10" data-aos="fade-up">100</div>
+                                    <div class="mb-0 text-white mt-lg-5 mt-3 no-sec-10 counter" data-aos="fade-up"
+                                        data-bs-target="100">0</div>
                                     <h6 class="p-font-s10 text-white" data-aos="fade-up">Satisfied Clients</h6>
                                 </div>
                             </div>
@@ -871,14 +872,15 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <button class="carousel-control-prev carousel-bottom" type="button"
+                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left fa-xs" style="color: #000000;"></i>
+
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <button class="carousel-control-next carousel-bottom" type="button"
+                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <i class="fa-solid fa-chevron-right fa-xs" style="color: #000000;"></i>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -1043,8 +1045,10 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <section class="section14">
+    <footer>
+        <section class="section14 ">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 px-3">
@@ -1144,28 +1148,30 @@
                 </button>
             </div>
         </section>
-    </main>
 
-    <footer class="bg-footer py-4-footer text-center">
-        <div class="container">
-            <div class="row align-items-center text-white">
-                <div class="col-sm-3 text-sm-start px-3">
-                    <a href="index.html">
-                        <img src="Images.homepage/logo-footer.png" alt="logo">
-                    </a>
-                </div>
-                <div class="col-sm-6 mt-3 mt-sm-0 px-3">
-                    <p class="mb-0 footer-heading-1">&copy; Copyright 2021 Elixir Inc.</p>
-                </div>
-                <div class="col text-sm-end mt-3 mt-sm-0 px-3">
-                    <span class="footer-heading-2">Designed by</span>
-                    <a class="text-white footer-heading-2 underline" href="https://themewagon.com/"
-                        target="_blank">Themewagon</a>
+        <section class="bg-footer py-4-footer text-center">
+            <div class="container">
+                <div class="row align-items-center text-white">
+                    <div class="col-sm-3 text-sm-start px-3">
+                        <a href="index.html">
+                            <img src="Images.homepage/logo-footer.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 mt-3 mt-sm-0 px-3">
+                        <p class="mb-0 footer-heading-1">&copy; Copyright 2021 Elixir Inc.</p>
+                    </div>
+                    <div class="col text-sm-end mt-3 mt-sm-0 px-3">
+                        <span class="footer-heading-2">Designed by</span>
+                        <a class="text-white footer-heading-2 underline" href="https://themewagon.com/"
+                            target="_blank">Themewagon</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </section>
     </footer>
+
+
+
 
 
 

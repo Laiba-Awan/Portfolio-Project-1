@@ -118,6 +118,7 @@
 .middle-bar {
   margin-top: 0px;
 }
+
 /* When the navbar is clicked */
 .navbar-toggler .top-bar {
   margin-top: 0px;
@@ -146,6 +147,7 @@
   transform: rotate(0deg);
 }
 /* hamburger ends here */
+
 .nav-btn {
   height: 34px;
   font-size: 12.003px;
@@ -163,7 +165,7 @@
   padding: 6.4px 19.2px !important;
 }
 .nav-pages:hover {
-  color: #7888a8;
+  color: #fdd428 !important;
 }
 /* <---------------------> */
 
@@ -231,28 +233,39 @@
   background-color: #fdd428;
   border-color: #fdd428;
 }
+.carousel-control-next,
 .carousel-control-prev {
-  transition: all 0.3s ease-in-out;
-  justify-content: left;
-  align-items: center;
-  opacity: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: calc(50% - 25px);
+}
+.carousel-control-prev {
+  left: 1%;
 }
 .carousel-control-next {
-  justify-content: right;
-  align-items: center;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
+  right: 1%;
 }
-.swipe-btn-next {
-  color: #000;
-  display: inline-block;
-  font-size: 1.776889rem;
+.carousel-bottom:hover {
+  background-color: rgb(239, 237, 237);
 }
-.swipe-btn-prev {
-  color: #000;
-  display: inline-block;
-  font-size: 1.776889rem;
-  width: 44px;
+.carousel-1-icon-1 {
+  font-size: xx-large;
+  left: 13%;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.263);
+}
+.carousel-1-icon-1:hover {
+  color: rgb(0, 0, 0);
+}
+.carousel-1-icon-2 {
+  font-size: xx-large;
+  right: 13%;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.263);
+}
+.carousel-1-icon-2:hover {
+  color: rgb(0, 0, 0);
 }
 /* <---------------------> */
 
@@ -771,6 +784,9 @@
 .sub-heading-s11 {
   color: #949494;
   font-family: "Open Sans", sans-serif;
+}
+.icon-carousel {
+  background-color: #2a3855;
 }
 /* <---------------------> */
 
